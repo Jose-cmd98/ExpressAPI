@@ -25,7 +25,7 @@ router.post('/', async (req, res)=>{
 
     const checkPassword = await bcrypt.compare(password, user.password);
     if(!checkPassword){
-        return res.status(404).json({msg: "Senha Incorreta"});
+        return res.status(400).json({msg: "Senha Incorreta"});
     }
     try{
 
