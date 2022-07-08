@@ -9,6 +9,7 @@ router.post('/', async (req, res)=>{
 
     const { email, password } = req.body;
 
+    //validade the response
     if(!email){
         res.status(404).json({msg: "Email Obrigatório"});
     }

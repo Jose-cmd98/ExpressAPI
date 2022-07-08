@@ -4,6 +4,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
+const cors = require('cors');
 
 
 const app = express(); // create express app
@@ -11,6 +12,7 @@ const port = 3000
 
 //config express to understand json
 app.use(express.json());
+app.use(cors('*'));
 
 //example route
 app.get('/', (req, res) => {
