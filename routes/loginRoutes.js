@@ -11,10 +11,10 @@ router.post('/', async (req, res)=>{
 
     //validade the response
     if(!email){
-        res.status(404).json({msg: "Email Obrigatório"});
+        res.status(403).json({msg: "Email Obrigatório"});
     }
     if(!password){
-        res.status(404).json({msg: "Senha Obrigatória"});
+        res.status(403).json({msg: "Senha Obrigatória"});
     }
 
     //check if exixts
