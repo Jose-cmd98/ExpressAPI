@@ -30,7 +30,7 @@ app.use('/auth/register', userRoutes);
 const login = require('./routes/loginRoutes');
 app.use('/auth/login', login);
 
-
+// crud routes
 
 
 
