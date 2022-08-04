@@ -70,5 +70,5 @@ function checkToken(req, res, next){
         res.status(400).json({msg: "token invalido"});
     }
 }
-
+// should include another mothod to check if the user is logged in
 module.exports = router;
